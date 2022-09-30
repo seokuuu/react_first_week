@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Example: 4-1</title>
+    <script>
+        function hey() {
+            alert('제출 완료!');
+        }
+    </script>
+</head>
+
+<body>
+
+    <form action="">
+        first name: <br> <input type="text"> <br>
+        Last name: <br> <input type="text"> <br>
+        Email: <br> <input type="text">
+
+        Gender :
+        <input type="radio" name="gender" value="male_info" required>
+        Male
+        <input type="radio" name="gender" value="male_info" required>
+        Female
+        <br />
+        Favorite :
+        <input type="checkbox" name="lang" value="html_box" />HTML
+        <input type="checkbox" name="lang" value="java_box" />JAVA
+        <input type="checkbox" name="lang" value="js_box" />JavaScript
+        <br />
+        Browser :
+        <select id=browsers name="browsers" required>
+            <option value="크롬" selected>크롬</option>
+            <option value="사파리">사파리</option>
+            <option value="엣지">엣지</option>
+        </select>
+        <br />
+        Birthday :
+        <input type="date" name="birthday" />
+        <br> <button onclick="hey()">제출</button>
+    </form>
+</body>
